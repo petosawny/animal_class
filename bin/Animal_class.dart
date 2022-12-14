@@ -1,24 +1,25 @@
+// master class
 
 class Animals {
- num tall =0;
+  // variables
+  num tall =0;
   String? color ;
   num age =0;
   String? sex ;
  String? kind ;
 num numberOfCategories =0;
+  // constructor
+  Animals({this.kind});
 
-/*
-
- Animals( this.tall, this.color, this.age, this.sex, this.kind ,);
-*/
-
+  //void fun
   void kindOfFood(  ){
    print("the animals eat  food" );
 
  }
-void sentence(){
+
+  //void fun
+  void title(){
    print("all animals are good");
 }
 
-  Animals({this.kind});
 }
