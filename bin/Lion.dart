@@ -1,30 +1,33 @@
 import 'dart:io';
 
 import 'Animal_class.dart';
-
+// class called Mammals extends from the class Animals
 class Mammals extends Animals {
+// constructor of this class with constructor from extends class
+  Mammals(  String? mKind  ):super (kind: mKind) ;
 
-  Mammals(  String? mkind  ):super (kind: mkind) ;
-
+  //variables
 
   String? food;
   num speed = 0;
 
-
-  void info() {
+  // void Function
+  void characteristic() {
 
     print("enter the color");
-    color = stdin.readLineSync()!;
+    color = stdin.readLineSync()!;    // insert value to the variable color
 
     print("enter the food");
-    food = stdin.readLineSync()!;
+    food = stdin.readLineSync()!;    // insert value to the variable food
 
     print("enter the speed");
-    num? speed = num.parse(stdin.readLineSync()!);
+    num? speed = num.parse(stdin.readLineSync()!);   // insert value to the variable speed
 
     print("the  $kind eat $food and spped is $speed and color is $color");
   }
-  void infoooo() {
+
+  // void Function
+  void generalKnowledge() {
 
     print("enter the age");
     num? age = num.parse(stdin.readLineSync()!);
