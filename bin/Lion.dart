@@ -1,5 +1,5 @@
+// import packages and classes
 import 'dart:io';
-
 import 'Animal_class.dart';
 // class called Mammals extends from the class Animals
 class Mammals extends Animals {
@@ -30,11 +30,11 @@ class Mammals extends Animals {
   void generalKnowledge() {
 
     print("enter the age");
-    num? age = num.parse(stdin.readLineSync()!);
+    num? age = num.parse(stdin.readLineSync()!);         // insert value to the variable age
     print("the lions age almost is $age");
 
     print("enter the gender");
-    sex = stdin.readLineSync()!;
+    sex = stdin.readLineSync()!;          // insert value to the variable sex
     print("the  $sex in $kind almost is bigger ");
   }
 
